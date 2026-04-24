@@ -263,21 +263,6 @@ video.gallery-image {
   padding: 32px 24px;
 }
 
-.close-btn {
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 13px;
-  cursor: pointer;
-  padding: 0;
-  color: var(--text-color);
-  transition: color 0.2s ease;
-}
-
-.close-btn:hover {
-  color: #a0a0a0;
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -450,11 +435,11 @@ video.gallery-image {
   .header-top { 
     grid-template-columns: 1fr; 
     gap: 16px; 
-    text-align: center; /* Centers header */
+    text-align: center; /* Centers header text */
   }
   
   .contact, .nav { 
-    align-items: center; /* Centers links */
+    align-items: center; /* Centers header links */
   }
   
   .bio { max-width: 100%; }
@@ -468,8 +453,8 @@ video.gallery-image {
     align-items: center; 
   }
   
-  .project-title { align-self: center; } /* Centers yellow box */
-  .project-details { padding-left: 0; } /* Fixes centering offset */
+  .project-title { align-self: center; } /* Centers yellow highlight box */
+  .project-details { padding-left: 0; } /* Removes left indent to center bullets */
   .project-description { font-size: 12px; } /* Slightly smaller description text */
 
   .project-a .gallery, .project-b .gallery, .project-d .gallery, 
@@ -494,7 +479,7 @@ video.gallery-image {
   }
 
   .brand .logo, .project-letter { font-size: 50.4px; }
-  .back-link, .tag, .filter-label, .filter-btn { font-size: 13px; } /* Downscaled tags to match body */
+  .back-link, .tag, .filter-label, .filter-btn { font-size: 13px; }
 
   /* Full screen overlay on mobile */
   .about-overlay {
