@@ -471,6 +471,23 @@ video.gallery-image {
     right: -100%;
   }
   .about-grid { grid-template-columns: 1fr; }
+
+  /* =========================================
+     PROJECT I: Mobile Native View
+     ========================================= */
+  
+  /* 1. Change the box to a vertical phone shape (9:16) */
+  .project-i .iframe-container {
+    aspect-ratio: 9 / 16 !important; 
+  }
+
+  /* 2. Turn off the zoom trick so the website triggers its own mobile layout! */
+  .project-i .iframe-container iframe.gallery-iframe {
+    width: 100% !important; 
+    height: 100% !important; 
+    transform: none !important; 
+  }
+  
 }
 
 /* =========================================
