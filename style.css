@@ -405,15 +405,28 @@ video.gallery-image {
 /* =========================================
    PROJECT I: Live Iframe Embed (Zoomed Out)
    ========================================= */
-.project-i .gallery { width: 100%; }
-.project-i .iframe-container {
-  position: relative; width: 100%; aspect-ratio: 16 / 9; 
-  overflow: hidden; border: 1px solid #000; background-color: #f4f4f4;
+.project-i .gallery { 
+  width: 100%; 
 }
+
+.project-i .iframe-container {
+  position: relative; 
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden; 
+  border: 1px solid #000; 
+  background-color: #f4f4f4;
+}
+
 .project-i .iframe-container iframe.gallery-iframe {
-  position: absolute; top: 0; left: 0;
-  width: 200%; height: 200%; transform: scale(0.5); 
-  transform-origin: top left; border: none; 
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  width: 150%; 
+  height: 150%; 
+  transform: scale(0.6666); 
+  transform-origin: top left; 
+  border: none; 
 }
 
 /* =========================================
