@@ -42,9 +42,6 @@ a {
   text-decoration: none;
 }
 
-
-
-/* --- The Main Outer Box --- */
 .site-wrapper {
   border: var(--border-thin);
   width: 100%;
