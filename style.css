@@ -421,7 +421,7 @@ video.gallery-image {
 }
 
 /* =========================================
-   MOBILE RESPONSIVE RULES (Max 900px)
+   MOBILE RESPONSIVE RULES 
    ========================================= */
 @media (max-width: 900px) {
   body { 
