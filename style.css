@@ -96,10 +96,9 @@ hr.divider {
 .contact, .nav {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Keeps links tightly stacked */
-  gap: 4px; /* Removes large gap between links */
-  height: auto; 
-  padding-bottom: 0;
+  justify-content: space-between; 
+  height: 100%; 
+  padding-bottom: 1.3em;
 }
 
 /* --- Link Overrides --- */
@@ -441,6 +440,10 @@ video.gallery-image {
   .contact, .nav { 
     align-items: center; /* Centers header links */
   }
+
+  .header-col.nav {
+    margin-top: -32px; 
+  }
   
   .bio { max-width: 100%; }
   .project-container { grid-template-columns: 1fr; }
@@ -478,7 +481,13 @@ video.gallery-image {
     width: 100% !important; 
   }
 
-  .brand .logo, .project-letter { font-size: 50.4px; }
+  .brand .logo, .project-letter { 
+    font-size: 50.4px; 
+  }
+  
+  .project-letter {
+    width: 100%;
+  }
   .back-link, .tag, .filter-label, .filter-btn { font-size: 13px; }
 
   /* Full screen overlay on mobile */
