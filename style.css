@@ -420,6 +420,10 @@ video.gallery-image {
   overflow-y: auto;   /* Allows vertical scrolling */
 }
 
+#home-close-btn {
+  display: none;
+}
+
 /* =========================================
    MOBILE RESPONSIVE RULES (Max 900px)
    ========================================= */
@@ -451,11 +455,11 @@ video.gallery-image {
   .header-top { 
     grid-template-columns: 1fr; 
     gap: 8px; 
-    text-align: center; 
+    text-align: left; 
   }
   
   .contact, .nav { 
-    align-items: center; 
+    align-items: flex-start; 
   }
   
   .header-col.nav {
@@ -521,9 +525,16 @@ video.gallery-image {
   .back-link, .tag, .filter-label, .filter-btn { font-size: 13px; }
 
   /* Full screen overlay on mobile */
+
+  /* Show Home button on mobile */
+  #home-close-btn {
+    display: inline-block;
+  }
+  
   .about-overlay {
     width: 100%;
     right: -100%;
+    overflow-y: auto !important;
   }
   .about-grid { grid-template-columns: 1fr; }
 

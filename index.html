@@ -360,6 +360,9 @@
 
   </div> <div id="about-overlay" class="about-overlay">
     <div class="overlay-content">
+
+      <a href="#" id="home-close-btn" class="about-btn" style="margin-bottom: 24px;">&#8599; Home</a>
+
       <h2 class="project-letter" style="text-align: left; border: none; margin-top: 24px; padding-bottom: 0;">🐭 ABOUT</h2>
       <hr class="divider" style="margin-bottom: 24px;">
       
@@ -395,18 +398,25 @@
   <script>
     const aboutLink = document.getElementById('about-link');
     const aboutOverlay = document.getElementById('about-overlay');
+    const homeCloseBtn = document.getElementById('home-close-btn');
 
     aboutLink.addEventListener('click', function(event) {
       event.preventDefault(); 
       aboutOverlay.classList.add('active');
     });
 
+    homeCloseBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      aboutOverlay.classList.remove('active');
+    });
+
     document.addEventListener('click', function(event) {
-      
       const isClickInsideOverlay = aboutOverlay.contains(event.target);
       const isClickOnLink = event.target.closest('#about-link');
 
+      // If they click OUTSIDE the yellow box, and didn't just click the link...
       if (!isClickInsideOverlay && !isClickOnLink && aboutOverlay.classList.contains('active')) {
+        // ...slide it closed!
         aboutOverlay.classList.remove('active');
       }
     });
