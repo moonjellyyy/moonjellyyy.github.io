@@ -536,7 +536,13 @@ video.gallery-image {
     right: -100%;
     overflow-y: auto !important;
   }
-  .about-grid { grid-template-columns: 1fr; }
+
+  .overlay-content {
+    padding: 16px 12px; 
+  }
+
+  .about-grid { grid-template-columns: 1fr; 
+                gap:12px;}
 
   /* =========================================
      PROJECT I: Mobile Native View
