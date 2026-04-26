@@ -529,6 +529,7 @@ video.gallery-image {
   /* Show Home button on mobile */
   #home-close-btn {
     display: inline-block;
+    margin-bottom: 4px !important;
   }
   
   .about-overlay {
@@ -538,7 +539,7 @@ video.gallery-image {
   }
 
   .overlay-content {
-    padding: 16px 12px; 
+    padding: 16px 12px 150px 12px;
   }
 
   .about-grid { grid-template-columns: 1fr; 
